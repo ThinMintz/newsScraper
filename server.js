@@ -36,7 +36,7 @@ mongoose.connect("mongodb://localhost/week18Populater", {
 
 // Routes
 
-// A GET route for scraping the echojs website
+// A GET route for scraping the NASA site
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with request
   axios.get("https://blogs.nasa.gov/").then(function(response) {
